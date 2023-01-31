@@ -59,7 +59,8 @@
 		559BB1F92986EA47000A021F /* model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
 		559BB1FA2986EA68000A021F /* mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; usesTabs = 1; };
 		559BB1FC29870420000A021F /* lighting_shader_vs */ = {isa = PBXFileReference; lastKnownFileType = text; path = lighting_shader_vs; sourceTree = "<group>"; };
-		559BB1FD29870433000A021F /* lighting_shader_fs */ = {isa = PBXFileReference; lastKnownFileType = text; path = lighting_shader_fs; sourceTree = "<group>"; };
+		55B750C12988708600A6D685 /* blinn_phong_fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = blinn_phong_fs.glsl; sourceTree = "<group>"; };
+		55B750C2298870BC00A6D685 /* cook_torrance_fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = cook_torrance_fs.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +126,10 @@
 		559BB1EE2986D371000A021F /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
+				55B750C12988708600A6D685 /* blinn_phong_fs.glsl */,
+				55B750C2298870BC00A6D685 /* cook_torrance_fs.glsl */,
 				559BB1EF2986D384000A021F /* shader.h */,
 				559BB1FC29870420000A021F /* lighting_shader_vs */,
-				559BB1FD29870433000A021F /* lighting_shader_fs */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";

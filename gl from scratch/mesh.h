@@ -115,7 +115,7 @@ public:
 ////				shininess = 20.f;
 ////			}}
 ////		catch(const std::exception& ex) {cout << "exc" << std::endl;}
-		shader.setFloat("material.shininess", shininess);
+//		shader.setFloat("material.shininess", 32.0f);
 		
 		// bind appropriate textures
 		unsigned int diffuseNr  = 1;
