@@ -61,6 +61,7 @@
 		559BB1FC29870420000A021F /* lighting_shader_vs */ = {isa = PBXFileReference; lastKnownFileType = text; path = lighting_shader_vs; sourceTree = "<group>"; };
 		55B750C12988708600A6D685 /* blinn_phong_fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = blinn_phong_fs.glsl; sourceTree = "<group>"; };
 		55B750C2298870BC00A6D685 /* cook_torrance_fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = cook_torrance_fs.glsl; sourceTree = "<group>"; };
+		55B750C42988963300A6D685 /* toon_fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = toon_fs.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +129,7 @@
 			children = (
 				55B750C12988708600A6D685 /* blinn_phong_fs.glsl */,
 				55B750C2298870BC00A6D685 /* cook_torrance_fs.glsl */,
+				55B750C42988963300A6D685 /* toon_fs.glsl */,
 				559BB1EF2986D384000A021F /* shader.h */,
 				559BB1FC29870420000A021F /* lighting_shader_vs */,
 			);

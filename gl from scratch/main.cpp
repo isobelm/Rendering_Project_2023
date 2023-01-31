@@ -92,6 +92,11 @@ void renderLighting(Shader shader) {
 	shader.setVec3("viewPos", camera.Position);
 	shader.setVec3("ambientLight", 0.1f, 0.12f, 0.15f);
 	shader.setFloat("material.shininess", shininess);
+	shader.setFloat("roughness", 1-(shininess/100));
+	
+	cout << "shininess: " << shininess <<endl;
+	cout << "roughness: " << 1-(shininess/100) <<endl;
+
 	shader.setFloat("material.fresnel", 0.8f);
 	shader.setInt("material.diffuse", 0);
 	shader.setInt("material.specular", 0);
@@ -170,7 +175,7 @@ void updateRotation() {
 }
 
 void updateShininess() {
-	shininess += 1.0f * deltaTime;
+	shininess += 10.0f * deltaTime;
 	if (shininess > 100) {
 		shininess = 0.0f;
 	}
@@ -205,7 +210,7 @@ int main()
 	Shader shaders[3] = {
 		Shader("Shaders/lighting_shader_vs", "Shaders/blinn_phong_fs.glsl"),
 		Shader("Shaders/lighting_shader_vs", "Shaders/cook_torrance_fs.glsl"),
-		Shader("Shaders/lighting_shader_vs", "Shaders/oren_nayar_fs.glsl"),
+		Shader("Shaders/lighting_shader_vs", "Shaders/toon_fs.glsl"),
 	};
 //	currentShader = 0;
     // load models
@@ -225,7 +230,7 @@ int main()
     {
 		updateTime();
 		updateRotation();
-//		updateShininess();
+		updateShininess();
 
         processInput(window);
 
