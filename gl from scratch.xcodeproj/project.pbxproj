@@ -69,6 +69,8 @@
 		55AC79992A0AE93600526BB6 /* particle_vs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = particle_vs.glsl; sourceTree = "<group>"; };
 		55AC799A2A0AE94A00526BB6 /* particle_fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = particle_fs.glsl; sourceTree = "<group>"; };
 		55AC799E2A0BF4ED00526BB6 /* stbInclude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbInclude.h; sourceTree = "<group>"; };
+		55B9504B2AE95A4A00D25658 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		55B9504C2AE95B2B00D25658 /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,8 @@
 		559BB1CD2986CB32000A021F = {
 			isa = PBXGroup;
 			children = (
+				55B9504C2AE95B2B00D25658 /* example.png */,
+				55B9504B2AE95A4A00D25658 /* README.md */,
 				559BB1D82986CB32000A021F /* gl from scratch */,
 				559BB1D72986CB32000A021F /* Products */,
 				559BB1E02986CBAE000A021F /* Frameworks */,
