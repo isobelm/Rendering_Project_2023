@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		551847C1298815F200C6C91E /* PointLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 551847BF298815F200C6C91E /* PointLight.cpp */; };
 		559BB1DA2986CB32000A021F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 559BB1D92986CB32000A021F /* main.cpp */; };
 		559BB1E22986CBAE000A021F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559BB1E12986CBAE000A021F /* OpenGL.framework */; };
 		559BB1E42986CBBB000A021F /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559BB1E32986CBBB000A021F /* GLUT.framework */; };
@@ -16,6 +15,10 @@
 		559BB1E92986CC27000A021F /* libassimp.5.2.4.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 559BB1E52986CBEB000A021F /* libassimp.5.2.4.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		559BB1EB2986CC29000A021F /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 559BB1E72986CC1D000A021F /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		559BB1ED2986CC8F000A021F /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 559BB1EC2986CC8E000A021F /* glad.c */; };
+		55AC798A2A0A882500526BB6 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AC79882A0A882500526BB6 /* Window.cpp */; };
+		55AC798D2A0A88A400526BB6 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AC798B2A0A88A400526BB6 /* Image.cpp */; };
+		55AC79952A0AE3DE00526BB6 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AC79932A0AE3DE00526BB6 /* Particle.cpp */; };
+		55AC79982A0AE54C00526BB6 /* ParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AC79962A0AE54C00526BB6 /* ParticleSystem.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,8 +46,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		551847BF298815F200C6C91E /* PointLight.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PointLight.cpp; sourceTree = "<group>"; };
-		551847C0298815F200C6C91E /* PointLight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PointLight.hpp; sourceTree = "<group>"; };
 		559BB1D62986CB32000A021F /* gl from scratch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "gl from scratch"; sourceTree = BUILT_PRODUCTS_DIR; };
 		559BB1D92986CB32000A021F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		559BB1E12986CBAE000A021F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -52,16 +53,22 @@
 		559BB1E52986CBEB000A021F /* libassimp.5.2.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.5.2.4.dylib; path = ../../../../../../../../usr/local/Cellar/assimp/5.2.5/lib/libassimp.5.2.4.dylib; sourceTree = "<group>"; };
 		559BB1E72986CC1D000A021F /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../../usr/local/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		559BB1EC2986CC8E000A021F /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../../../../../../../../../usr/local/include/glad/src/glad.c; sourceTree = "<group>"; };
-		559BB1EF2986D384000A021F /* shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
 		559BB1F12986D4F7000A021F /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		559BB1F52986D6F5000A021F /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
-		559BB1F62986E7DD000A021F /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
-		559BB1F92986EA47000A021F /* model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
-		559BB1FA2986EA68000A021F /* mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; usesTabs = 1; };
-		559BB1FC29870420000A021F /* lighting_shader_vs */ = {isa = PBXFileReference; lastKnownFileType = text; path = lighting_shader_vs; sourceTree = "<group>"; };
-		55B750C12988708600A6D685 /* blinn_phong_fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = blinn_phong_fs.glsl; sourceTree = "<group>"; };
-		55B750C2298870BC00A6D685 /* cook_torrance_fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = cook_torrance_fs.glsl; sourceTree = "<group>"; };
-		55B750C42988963300A6D685 /* toon_fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = toon_fs.glsl; sourceTree = "<group>"; };
+		55AC79882A0A882500526BB6 /* Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		55AC79892A0A882500526BB6 /* Window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
+		55AC798B2A0A88A400526BB6 /* Image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
+		55AC798C2A0A88A400526BB6 /* Image.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Image.hpp; sourceTree = "<group>"; };
+		55AC798F2A0A895400526BB6 /* Shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
+		55AC79912A0A977100526BB6 /* vs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = vs.glsl; sourceTree = "<group>"; };
+		55AC79922A0A978300526BB6 /* fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = fs.glsl; sourceTree = "<group>"; };
+		55AC79932A0AE3DE00526BB6 /* Particle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		55AC79942A0AE3DE00526BB6 /* Particle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Particle.hpp; sourceTree = "<group>"; };
+		55AC79962A0AE54C00526BB6 /* ParticleSystem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleSystem.cpp; sourceTree = "<group>"; };
+		55AC79972A0AE54C00526BB6 /* ParticleSystem.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleSystem.hpp; sourceTree = "<group>"; };
+		55AC79992A0AE93600526BB6 /* particle_vs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = particle_vs.glsl; sourceTree = "<group>"; };
+		55AC799A2A0AE94A00526BB6 /* particle_fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = particle_fs.glsl; sourceTree = "<group>"; };
+		55AC799E2A0BF4ED00526BB6 /* stbInclude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbInclude.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,14 +106,19 @@
 		559BB1D82986CB32000A021F /* gl from scratch */ = {
 			isa = PBXGroup;
 			children = (
+				55AC79932A0AE3DE00526BB6 /* Particle.cpp */,
+				55AC79942A0AE3DE00526BB6 /* Particle.hpp */,
+				55AC79962A0AE54C00526BB6 /* ParticleSystem.cpp */,
+				55AC799E2A0BF4ED00526BB6 /* stbInclude.h */,
+				55AC79972A0AE54C00526BB6 /* ParticleSystem.hpp */,
+				55AC798F2A0A895400526BB6 /* Shader.hpp */,
+				55AC79882A0A882500526BB6 /* Window.cpp */,
+				55AC798B2A0A88A400526BB6 /* Image.cpp */,
+				55AC798C2A0A88A400526BB6 /* Image.hpp */,
+				55AC79892A0A882500526BB6 /* Window.hpp */,
 				559BB1F42986D6DE000A021F /* Libraries */,
 				559BB1F12986D4F7000A021F /* Resources */,
 				559BB1D92986CB32000A021F /* main.cpp */,
-				551847BF298815F200C6C91E /* PointLight.cpp */,
-				551847C0298815F200C6C91E /* PointLight.hpp */,
-				559BB1F62986E7DD000A021F /* camera.h */,
-				559BB1FA2986EA68000A021F /* mesh.h */,
-				559BB1F92986EA47000A021F /* model.h */,
 				559BB1EE2986D371000A021F /* Shaders */,
 				559BB1EC2986CC8E000A021F /* glad.c */,
 			);
@@ -127,11 +139,10 @@
 		559BB1EE2986D371000A021F /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				55B750C12988708600A6D685 /* blinn_phong_fs.glsl */,
-				55B750C2298870BC00A6D685 /* cook_torrance_fs.glsl */,
-				55B750C42988963300A6D685 /* toon_fs.glsl */,
-				559BB1EF2986D384000A021F /* shader.h */,
-				559BB1FC29870420000A021F /* lighting_shader_vs */,
+				55AC79912A0A977100526BB6 /* vs.glsl */,
+				55AC79992A0AE93600526BB6 /* particle_vs.glsl */,
+				55AC799A2A0AE94A00526BB6 /* particle_fs.glsl */,
+				55AC79922A0A978300526BB6 /* fs.glsl */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -202,8 +213,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				551847C1298815F200C6C91E /* PointLight.cpp in Sources */,
 				559BB1DA2986CB32000A021F /* main.cpp in Sources */,
+				55AC79952A0AE3DE00526BB6 /* Particle.cpp in Sources */,
+				55AC79982A0AE54C00526BB6 /* ParticleSystem.cpp in Sources */,
+				55AC798D2A0A88A400526BB6 /* Image.cpp in Sources */,
+				55AC798A2A0A882500526BB6 /* Window.cpp in Sources */,
 				559BB1ED2986CC8F000A021F /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
